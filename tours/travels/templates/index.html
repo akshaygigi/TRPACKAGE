@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<h1 CLASS="DESCRP">THE  <SPAN CLASS="SP">SKY  </SPAN>TRAVELS</h1>
+<<ul>
+    <li><a href="{% url 'signup' %}">SIGN UP</a> </li>
+    <li><a href="{% url 'loginss' %}">LOGIN</a></li>
+    <li><a href="{% url  'packages' %}">PACKAGES</a></li>
+    <li><a href="{% url  'payments' %}">BOOKING AND PAYMENTS</a></li>
+    <li><a href="">VENDOR LOGIN</a></li>
+</ul>
+</body>
+</html>

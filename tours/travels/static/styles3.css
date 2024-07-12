@@ -1,0 +1,16 @@
+.booking {
+ text-align:center;
+ font-size:100px;
+ color:blue;
+}
+body{
+background-image:url('images/payment.jpg');
+background-size:cover;
+background-repeat:no-repeat;
+}
+
+.pbtn{
+ font-size:30px;
+ text-align:center;
+ padding-top:20px;
+}

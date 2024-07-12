@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .heading{
+        text-align:center;
+        font-size:80px;
+        color:red;
+        }
+
+        h2
+           {color:blue;}
+        div{
+        font-size:50px;
+        text-align:center;
+        }
+
+        a{
+        text-decoration:none;
+        }
+
+        body{
+        background-color:black;
+
+        }
+
+    </style>
+</head>
+<body>
+<h1 class="heading">TOUR PACKAGES</h1>
+    {% for package in packages %}
+        <div>
+            <h2>{{ package.destination }}</h2>
+            <img src="{{ package.image.url }}" alt="{{ package.destination }}">
+            <a href="{% url  'payments' %}"><p>Price: ${{ package.price }}</p>BOOK NOW</a>
+            <p>Duration: {{ package.duration }} days</p>
+        </div>
+    {% endfor %}
+</body>
